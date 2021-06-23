@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    /* color: blue; */
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#result{
+    width: 210px;
+    margin: 5px;
+    font-size: 25px;
+    padding: 5px;
+}
