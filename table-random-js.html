@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Danh sách sinh viên </title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <!--
+- Tạo ngẫu nhiên 10 sinh viên
+- Mỗi sinh viên gồm các thuộc tính sau (tên, tuổi, email, địa chỉ)
+- Hiển thị kết quả ra 1 table
+-->
+    <table width="100%" border="1" cellspacing="3" cellpadding="3">
+        <thead>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Tuổi</th>
+            <th>Email</th>
+            <th>Địa chỉ</th>
+        </thead>
+        <tbody>
+            <script type="text/javascript">
+                var studentList = []
+                var studentList1 = []
+                var studentList2 = []
+                var objectsv = [{
+                    image: 'learn_css.jpg',
+                    name: 'lập trình front end with VUE',
+                    tags: ['KHOÁ HỌC', 'CNTT'],
+                    date_day: '18/10/2021',
+                    date_hour: '09:00',
+                },
+                {
+                    image: 'learn_css.jpg',
+                    name: 'lập trình front end with VUE',
+                    tags: ['KHOÁ HỌC', 'CNTT'],
+                    date_day: '18/10/2021',
+                    date_hour: '09:00',
+                },
+                {
+                    image: 'learn_css.jpg',
+                    name: 'lập trình front end with VUE',
+                    tags: ['KHOÁ HỌC', 'CNTT'],
+                    date_day: '18/10/2021',
+                    date_hour: '09:00',
+                },
+                {
+                    image: 'learn_css.jpg',
+                    name: 'lập trình front end with VUE',
+                    tags: ['KHOÁ HỌC', 'CNTT'],
+                    date_day: '18/10/2021',
+                    date_hour: '09:00',
+                }
+                ]
+                for (i = 0; i < 10; i++) {
+                    var student = {
+                        "Name": "Sinh viên " + 1,
+                        "Age": 21,
+                        "Email": i + "@gmail.com",
+                        "Address": "Cần Thơ "
+                    }
+                    studentList.push(student)
+                }
+                for (i = 0; i < studentList.length; i++) {
+
+                    //string tempate ES6
+                    document.writeln(`<tr>
+                            <td>${i + 1}</td>
+                            <td>${studentList[i].Name}</td>
+                            <td>${studentList[i].Age}</td>
+                            <td>${studentList[i].Email}</td>
+                            <td>${studentList[i].Address}</td>
+                        </tr>`)
+
+                    // document.writeln('<tr>'+
+                    // 		'<td>'+(i+1)+'</td>'+
+                    // 		'<td>'+studentList[i].Name+'</td>'+
+                    // 		'<td>'+studentList[i].age+'</td>'+
+                    // 		'<td>'+studentList[i].email+'</td>'+
+                    // 		'<td>'+studentList[i].address+'</td>'+
+                    // 	'</tr>')
+                }
+            </script>
+        </tbody>
+    </table>
+</body>
+
+</html>
